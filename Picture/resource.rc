@@ -1,0 +1,36 @@
+#include <windows.h>
+#include "resource.h"
+
+
+MainIcon    ICON    "icon.ico"
+
+Bitmap1     BITMAP  "bitmap.bmp"
+
+
+MainMenu    MENU {
+	POPUP "&Меню"
+		{
+		MENUITEM "&Открыть\tCtrl+o", IDM_OPEN
+        MENUITEM "Открыть из &ресурсов", IDM_OPEN2
+        MENUITEM "&Сохранить\tCtrl+s", IDM_SAVE
+        MENUITEM "&Преобразовать\tCtrl+i", IDM_INVERT
+        MENUITEM "&Оттенки серого\tCtrl+g", IDM_GRAYSTYLE
+		MENUITEM "&Сделать черно-белой\tCtrl+r", IDM_BW
+		MENUITEM "&Светлее\tCtrl+w", IDM_W
+		MENUITEM "&Темнее\tCtrl+b", IDM_B
+		MENUITEM "&Отзеркалить\tCtrl+m", IDM_MIRROR
+		MENUITEM "&Умножить изображение в 9 раз\tCtrl+a", IDM_MULTIPLY_IMAGE
+		}
+	}
+
+Accel   ACCELERATORS {
+	"^o", IDM_OPEN
+    "^s", IDM_SAVE
+    "^i", IDM_INVERT
+    "^g", IDM_GRAYSTYLE
+	"^r", IDM_BW
+	"^w", IDM_W
+	"^b", IDM_B
+	"^m", IDM_MIRROR
+	"^a", IDM_MULTIPLY_IMAGE
+}

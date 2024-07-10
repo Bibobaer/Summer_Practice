@@ -1,0 +1,2 @@
+C:\Users\gilya\OneDrive\Рабочий стол\SP_WinApi\examples\picture\Debug\picture.exe
+C:\Users\gilya\source\repos\picture\Debug\picture.exe
